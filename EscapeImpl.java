@@ -6,7 +6,7 @@ public class EscapeImpl implements Escape {
      * Using DFS find a path from the entrance to the exit in a maze.
      *
      * @param maze Requires a valid Two-dimensional array set of type char.
-     * @return The result must be a continuous collection of valid two-dimensional arrays, or an empty collection if there is no path.
+     * @return The result must be a continuous collection of valid two-dimensional arrays, or an empty list if there is no path.
      * @ensures myPerfectRecursionMethod() always return and no exception thrown, no side effect.
      */
     @Override
@@ -47,7 +47,9 @@ public class EscapeImpl implements Escape {
      * @param start  Requires an array of type int is required and cannot be empty.
      * @param visit  Requires a two-dimensional array of type boolean.
      * @param result A list of custom types.
-     * @return result list will be returned.
+     * @return  Return a list of coordinates, from the exit point to the entrance point. The
+     * first item of the list is the coordinate of exit point while the last item is the
+     * coordinate of the entrance point.
      * @ensures Always return and no exception thrown, no side effect.
      */
     public boolean dfs(char[][] maze, int[] start, boolean[][] visit, List<Pair<Integer, Integer>> result) {
