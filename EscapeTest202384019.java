@@ -9,6 +9,7 @@ import org.junit.Test;
 public class EscapeTest202384019 {
     private final Escape escape = new EscapeImpl();
 
+    // The normal one
     final char[][] maze1 = new char[][]{
             {' ', ' ', ' ', ' ', ' '},
             {' ', 'E', 'W', 'W', ' '},
@@ -16,6 +17,7 @@ public class EscapeTest202384019 {
             {' ', ' ', ' ', ' ', ' '},
     };
 
+    // No exit
     final char[][] maze2 = new char[][]{
             {' ', ' ', ' ', ' ', ' '},
             {' ', 'E', 'W', 'W', ' '},
@@ -23,14 +25,17 @@ public class EscapeTest202384019 {
             {' ', ' ', ' ', ' ', ' '},
     };
 
+    // No entrance and exit
     final char[][] maze3 = new char[][]{
             {' '}
     };
 
+    // Maze is null
     final char[][] maze4 = new char[][]{
             {}
     };
 
+    // No entrance
     final char[][] maze5 = new char[][]{
             {' ', ' ', ' ', ' ', ' '},
             {' ', ' ', 'W', 'W', ' '},
