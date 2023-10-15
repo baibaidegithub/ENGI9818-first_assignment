@@ -39,7 +39,6 @@ public class EscapeImpl implements Escape {
         return result;
     }
 
-
     /**
      * Recursive field
      *
@@ -47,7 +46,7 @@ public class EscapeImpl implements Escape {
      * @param start  Requires an array of type int is required and cannot be empty.
      * @param visit  Requires a two-dimensional array of type boolean.
      * @param result A list of custom types.
-     * @return  Return a list of coordinates, from the exit point to the entrance point. The
+     * @return Return a list of coordinates, from the exit point to the entrance point. The
      * first item of the list is the coordinate of exit point while the last item is the
      * coordinate of the entrance point.
      * @ensures Always return and no exception thrown, no side effect.
